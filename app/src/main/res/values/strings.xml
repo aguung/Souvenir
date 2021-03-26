@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Oleh-Oleh Khas Ponorogo</string>
+    <string name="home">Home</string>
+    <string name="cari">Cari</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="info">Info</string>
+    <string name="copyright">\u00A9 2021 Universitas Amikom Yogyakarta </string>
+    <string name="todo">todo</string>
+    <string name="nama_souvenir">Nama Souvenir</string>
+    <string name="alamat_lokasi">Alamat Lokasi</string>
+    <string name="deskripsi_souvenir">Deskripsi Souvenir</string>
+    <string name="ulangi">Ulangi</string>
+    <string name="data_souvenir_kosong">Data Souvenir Kosong</string>
+    <string name="cari_oleh_oleh">Cari oleh-oleh</string>
+    <string name="category_name">Category Name</string>
+    <string name="detail_oleh_oleh">Detail oleh-oleh</string>
+    <string name="peta">Peta</string>
+    <string name="deskripsi_oleh_oleh">Deskripsi oleh-oleh</string>
+    <string name="versi">Versi %1$s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="petunjuk_arah">Petunjuk Arah</string>
+    <string name="jam_buka_dan_tutup">Jam buka dan tutup</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="cara_menggunakan_aplikasi_oleh_oleh_khas_ponrogo">Cara menggunakan aplikasi Oleh-oleh khas Ponorogo :</string>
+    <string name="_1">1.</string>
+    <string name="pilih_oleh_olehnya_makanan_atau_souvenir">Pilih oleh-olehnya makanan atau souvenir.</string>
+    <string name="_2">2.</string>
+    <string name="lalu_di_detail_oleh_olehnya_klick_petunjuk_arah">Lalu, di detail oleh-olehnya klick petunjuk arah.</string>
+    <string name="_3">3.</string>
+    <string name="setelah_menampilkan_peta_klick_bagian_pin_warna_merah">Setelah menampilkan peta, klick bagian pin warna merah.</string>
+    <string name="dipojok_kanan_bawah_akan_ada_icon_panah_untuk_menujukan_rute">Dipojok kanan bawah akan ada icon panah untuk menujukan rute.</string>
+    <string name="_4">4.</string>
+    <string name="_5">5.</string>
+    <string name="dan_nanti_akan_di_arahkan_ke_google_maps">Dan nanti akan di arahkan ke google maps.</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="no_whatsapp">Aplikasi whatsapp tidak terinstall</string>
+</resources>

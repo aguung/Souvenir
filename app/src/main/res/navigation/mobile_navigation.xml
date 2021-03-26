@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.devfutech.souvenir.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.devfutech.souvenir.ui.search.SearchFragment"
+        android:label="@string/cari"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.devfutech.souvenir.ui.help.HelpFragment"
+        android:label="@string/bantuan"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.devfutech.souvenir.ui.info.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.devfutech.souvenir.ui.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.devfutech.souvenir.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="souvenir"
+            app:argType="com.devfutech.souvenir.data.local.entity.Souvenir"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.devfutech.souvenir.ui.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <argument
+            android:name="souvenir"
+            app:argType="com.devfutech.souvenir.data.local.entity.Souvenir"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>
