@@ -1,3 +1,9 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+
+val baseApiUrl: String = System.getenv("API_URL") ?: gradleLocalProperties(
+    rootDir
+).getProperty("API_URL")
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -20,7 +26,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "BASE_URL", "\"https://script.google.com/macros/s/AKfycbyKdr9QyWGHjtpVkAG1lDAxlGmm3BLsKHMP-nJOozAhndXOBZ7YIUUh/\"")
+        buildConfigField(
+            "String", "BASE_URL", baseApiUrl
+        )
     }
 
     buildTypes {
@@ -64,8 +72,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.31.2-alpha")
-    kapt("com.google.dagger:hilt-android-compiler:2.31.2-alpha")
+    implementation("com.google.dagger:hilt-android:2.33-beta")
+    kapt("com.google.dagger:hilt-android-compiler:2.33-beta")
     implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt("androidx.hilt:hilt-compiler:1.0.0-beta01")
 
@@ -94,6 +102,18 @@ dependencies {
     //Maps
     implementation("com.google.android.gms:play-services-maps:17.0.0")
     implementation("com.google.android.gms:play-services-location:18.0.0")
+
+    //Chuck
+    debugImplementation("com.github.chuckerteam.chucker:library:3.4.0")
+    releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.4.0")
+
+    //HTTP Logging Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
+
+    //Hyperion Check
+    debugImplementation("com.willowtreeapps.hyperion:hyperion-core:0.9.31")
+    debugImplementation("com.willowtreeapps.hyperion:hyperion-build-config:0.9.31")
+    debugImplementation("com.willowtreeapps.hyperion:hyperion-phoenix:0.9.31")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
