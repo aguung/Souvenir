@@ -27,7 +27,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField(
-            "String", "BASE_URL", baseApiUrl
+            "String", "BASE_URL", "\"${baseApiUrl}\""
         )
     }
 
