@@ -55,15 +55,15 @@ android {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.32")
-    implementation("androidx.core:core-ktx:1.3.2")
-    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.10")
+    implementation("androidx.core:core-ktx:1.5.0")
+    implementation("androidx.appcompat:appcompat:1.3.0")
     implementation("com.google.android.material:material:1.3.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
 
     //Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.3.4")
-    implementation("androidx.navigation:navigation-ui-ktx:2.3.4")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
 
     //Livedata
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
@@ -72,25 +72,25 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.33-beta")
-    kapt("com.google.dagger:hilt-android-compiler:2.33-beta")
+    implementation("com.google.dagger:hilt-android:2.35.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.35.1")
     implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    kapt("androidx.hilt:hilt-compiler:1.0.0-beta01")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
 
     // Retrofit + GSON
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     // Paging 3
-    implementation("androidx.paging:paging-runtime-ktx:3.0.0-beta03")
+    implementation("androidx.paging:paging-runtime-ktx:3.0.0")
 
     // Room
-    implementation("androidx.room:room-runtime:2.3.0-rc01")
-    implementation("androidx.room:room-ktx:2.3.0-rc01")
-    kapt("androidx.room:room-compiler:2.3.0-rc01")
+    implementation("androidx.room:room-runtime:2.4.0-alpha02")
+    implementation("androidx.room:room-ktx:2.4.0-alpha02")
+    kapt("androidx.room:room-compiler:2.4.0-alpha02")
 
     //Google API
-    implementation("com.google.android.gms:play-services-maps:17.0.0")
+    implementation("com.google.android.gms:play-services-maps:17.0.1")
     implementation("com.google.android.gms:play-services-location:18.0.0")
 
     //COIL Image Load
@@ -100,7 +100,7 @@ dependencies {
     implementation("com.facebook.shimmer:shimmer:0.5.0")
 
     //Maps
-    implementation("com.google.android.gms:play-services-maps:17.0.0")
+    implementation("com.google.android.gms:play-services-maps:17.0.1")
     implementation("com.google.android.gms:play-services-location:18.0.0")
 
     //Chuck
